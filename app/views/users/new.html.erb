@@ -1,1 +1,12 @@
 <h1>My view page</h1>
+
+<form accept-charset="UTF-8" action="/users" method="post">
+	<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+	<label>Username</label>
+	<input type="text" name="username"> <br>
+	<label>Email</label>
+	<input type="text" name="email"> <br>
+	<label>Password</label>
+	<input type="password" name="password"> <br>
+	<input type="submit" value="Submit">
+</form>
