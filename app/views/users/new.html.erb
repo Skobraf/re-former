@@ -1,4 +1,11 @@
 <h1>My view page</h1>
+<% if @user.errors.full_messages %>
+  <ul>
+  <%@user.errors.full_messages.each do |error| %>
+    <li><%= error %></li>
+  <%end%>
+  </ul>
+<%end%>
 
 <%= form_for @user, url: {action: 'create'} do |f|%>
   <%= f.label :username, 'Username:' %>
