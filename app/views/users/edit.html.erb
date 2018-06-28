@@ -1,10 +1,2 @@
-<h1>Edit</h1>
-<%= form_for @user do |f|%>
-  <%= f.label :username, 'Username:' %>
-  <%= f.text_field :username %>
-  <%= f.label :email, 'Email:' %>
-  <%= f.text_field :email, placeholder: 'example@mail.com' %>
-  <%= f.label :password, 'Password:' %>
-  <%= f.password_field :password %>
-  <%= f.submit 'Submit' %>
-<% end %>
+<h1>Edit User</h1>
+<%= render 'form' %>

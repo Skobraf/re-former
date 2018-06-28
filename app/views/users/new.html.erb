@@ -1,21 +1,5 @@
-<h1>My view page</h1>
-<% if @user.errors.full_messages %>
-  <ul>
-  <%@user.errors.full_messages.each do |error| %>
-    <li><%= error %></li>
-  <%end%>
-  </ul>
-<%end%>
-
-<%= form_for @user do |f|%>
-  <%= f.label :username, 'Username:' %>
-  <%= f.text_field :username %>
-  <%= f.label :email, 'Email:' %>
-  <%= f.text_field :email, placeholder: 'example@mail.com' %>
-  <%= f.label :password, 'Password:' %>
-  <%= f.password_field :password %>
-  <%= f.submit 'Submit' %>
-<% end %>
+<h1>Register User</h1>
+<%= render 'form' %>
 
 <!--<%= form_tag '/users', method: 'post' do %>
   <%= label_tag :username, 'Username:' %>
