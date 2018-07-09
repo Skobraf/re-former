@@ -1,0 +1,11 @@
+first:
+  id: 1
+  username: ayoub_abed
+  email: skobrafto@gmail.com
+  password: password
+
+second:
+  id: 2
+  username: jesus_alvarez
+  email: alv.mtz@gmail.com
+  password: password
